@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneakers-74 - Магазин кроссовок</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="js.js"></script>
+    </head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">Sneakers<span>74</span></a>
+                <nav>
+                    <ul>
+                        <li><a href="#catalog">Каталог</a></li>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <div class="cart-icon" id="cart-icon">
+                        <div class="cart-icon"><img src="картинки/basket_2587493.png" alt="Корзина" height="30px" width="30px"></div> 
+                        <span class="cart-count" id="cart-count">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Герой секция -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Лучшие кроссовки для вашего стиля</h1>
+            <p>Откройте для себя уникальную коллекцию кроссовок от ведущих брендов по доступным ценам</p>
+            <a href="#catalog" class="button" id="shop-button">Перейти к покупкам</a>
+        </div>
+    </section>
+
+    <!-- Категории -->
+    <section class="categories" id="catalog">
+        <div class="container">
+            <h2 class="section-title">Категории</h2>
+            <div class="category-grid">
+                <!-- Каждая карточка теперь ведет на отдельную страницу категории -->
+                <a href="sport.html" class="category-card" id="sport-category">
+                    <div class="category-img">
+                        <img src="картинки/беговые.png">
+                    </div>
+                    <div class="category-info">
+                        <h3>Спортивные</h3>
+                    </div>
+                </a>
+                <a href="casual.html" class="category-card" id="casual-category">
+                    <div class="category-img">
+                        <img src="картинки/повседневка.png">
+                    </div>
+                    <div class="category-info">
+                        <h3>Повседневные</h3>
+                    </div>
+                </a>
+                <a href="fashion.html" class="category-card" id="fashion-category">
+                    <div class="category-img">
+                        <img src="картинки/модные.png">
+                    </div>
+                    <div class="category-info">
+                        <h3>Модные</h3>
+                    </div>
+                </a>
+                <a href="street.html" class="category-card" id="street-category">
+                    <div class="category-img">
+                        <img src="картинки/зимние-no-bg-preview (carve.photos).png">
+                    </div>
+                    <div class="category-info">
+                        <h3>Зимние</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Популярные товары -->
+    <section class="popular-products">
+        <div class="container">
+            <h2 class="section-title">Популярные товары</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="">
+                    </div>
+                    <div class="product-info">
+                        <h3>Nike Air Force 1</h3>
+                        <p>Легкие и удобные кроссовки для бега</p>
+                        <div class="product-price">8 999 ₽</div>
+                        <button class="add-to-cart" data-id="1" data-name="Nike Air Force 1" data-price="8999">Добавить в корзину</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="">
+                    </div>
+                    <div class="product-info">
+                        <h3>Nike Initiator</h3>
+                        <p>Технологичные кроссовки с амортизацией</p>
+                        <div class="product-price">12 499 ₽</div>
+                        <button class="add-to-cart" data-id="2" data-name="Nike Initiator" data-price="12499">Добавить в корзину</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="картинки/беговые.png">
+                    </div>
+                    <div class="product-info">
+                        <h3>Adidas DURAMO SL2</h3>
+                        <p>Классические кроссовки для повседневной носки</p>
+                        <div class="product-price">7 299 ₽</div>
+                        <button class="add-to-cart" data-id="3" data-name="Adidas Duramo SL2" data-price="7299">Добавить в корзину</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="картинки/asaproky.jpg">
+                    <div class="product-info">
+                        <h3>A$AP Rocky x Puma Inhale OG</h3>
+                        <p>Стильные кроссовки с ретро-дизайном</p>
+                        <div class="product-price">9 799 ₽</div>
+                        <button class="add-to-cart" data-id="4" data-name="A$AP Rocky X Puma Inhale OG" data-price="9799">Добавить в корзину</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- О нас -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>О компании Sneakers-74</h2>
+                    <p>Мы - интернет-магазин кроссовок, который предлагает широкий ассортимент качественной обуви от ведущих мировых брендов.</p>
+                    <p>Наша миссия - сделать покупку кроссовок удобной и приятной, предлагая только проверенные модели по доступным ценам.</p>
+                    <p>Мы тщательно отбираем каждую пару, чтобы вы могли быть уверены в качестве и комфорте.</p>
+                    <a href="#contacts" class="button">Связаться с нами</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Магазин кроссовок">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="contact" id="contacts">
+        <div class="container">
+            <h2 class="section-title">Свяжитесь с нами</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Контактная информация</h3>
+                    <p>📞 +7(908)086-25-95</p>
+                    <p>✉️ info@sneakers-74.ru</p>
+                    <p>📍 г. Миасс, ул. Керченская д.1</p>
+                    <p>🕒 Ежедневно с 9:00 до 21:00</p>
+                </div>
+                <div class="contact-form">
+                    <h3>Оставьте заявку</h3>
+                    <form id="contact-form">
+                        <input type="text" placeholder="Ваше имя" required>
+                        <input type="email" placeholder="Ваш email" required>
+                        <textarea placeholder="Ваше сообщение" rows="5" required></textarea>
+                        <button type="submit">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Магазин</h4>
+                    <ul>
+                        <li><a href="#catalog">Каталог</a></li>
+                        <li><a href="#">Акции</a></li>
+                        <li><a href="#">Новинки</a></li>
+                        <li><a href="#">Популярное</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Помощь</h4>
+                    <ul>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Возврат и обмен</a></li>
+                        <li><a href="#">Размеры</a></li>
+                        <li><a href="#">Вопросы и ответы</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>О компании</h4>
+                    <ul>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="#">Партнеры</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Подписка</h4>
+                    <p>Подпишитесь на наши новости и акции</p>
+                    <form class="footer-form">
+                        <input type="email" placeholder="Ваш email" required>
+                        <button type="submit">OK</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Sneakers-74</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Модальное окно корзины -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Ваша корзина</h2>
+            <div class="cart-items" id="cart-items">
+                <!-- Товары будут добавляться сюда -->
+            </div>
+            <div class="cart-total">
+                Итого: <span id="cart-total-price">0</span> ₽
+            </div>
+            <button class="button" id="checkout-button" style="width: 100%;">Оформить заказ</button>
+        </div>
+    </div>
+    </body>
+</html>
